@@ -11,4 +11,3 @@
 require 'rubygems'
 
 require 'fog'
-

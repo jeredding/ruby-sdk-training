@@ -10,7 +10,7 @@ require 'rubygems'
 # require the fog library
 require 'fog'
 
-# create connection to Next Gen Server
+# create connection to Next Gen Servers Service
 service = Fog::Compute.new :provider => 'rackspace', :version => :v2, :rackspace_username => USER_NAME, :rackspace_api_key => API_KEY
 
 # list images

@@ -7,10 +7,12 @@
 # Hint: http://developer.rackspace.com/#ruby
 # 
 
+# require rubygems library if using 1.8.7
 require 'rubygems'
+
 require 'fog'
 
-# create connection to Next Gen Server
+# create connection to Next Gen Servers Service
 service = Fog::Compute.new :provider => 'rackspace', :version => :v2 #, :rackspace_username => USER_NAME, :rackspace_api_key => API_KEY
 
 # first Ubuntu image
@@ -30,7 +32,7 @@ server = service.servers.bootstrap :name => 'bootstrap-server',
 
 puts "success!\n\n"
 
-# call uname
+# call uname using ssh
 results = server.ssh("uname -a")
 
 puts "===[uname -a result]============="
