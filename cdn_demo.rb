@@ -34,3 +34,5 @@ r2.body
 
 # Everything is stored as a header
 r2.header
+
+# Actual REST Call => http://docs.rackspace.com/files/api/v1/cf-devguide/content/View-Container_Info-d1e1285.html
