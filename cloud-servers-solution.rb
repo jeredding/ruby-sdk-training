@@ -21,7 +21,7 @@ image = service.images.find {|img| img.name =~ /Ubuntu/}
 # first flavor
 flavor = service.flavors.first
 
-put "Now Creating Server..."
+puts "Now Creating Server..."
 
 # Bootstrap server
 server = service.servers.bootstrap :name => 'bootstrap-server',
